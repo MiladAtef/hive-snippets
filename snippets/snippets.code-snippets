@@ -1,0 +1,96 @@
+{
+  "HiveType class extends HiveObject": {
+    "prefix": "hive",
+    "body": [
+      "import 'package:hive/hive.dart';",
+      "",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@HiveType()",
+      "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} extends HiveObject {",
+      "\t@HiveField(0)",
+      "\tString id;",
+      "\t${0:// Hive fields go here}",
+      "}"
+    ],
+    "description": "Creates an HiveType class extending HiveObject structure based on the filename."
+  },
+  "HiveType class": {
+    "prefix": "hivc",
+    "body": [
+      "import 'package:hive/hive.dart';",
+      "",
+      "part '${TM_FILENAME_BASE}.g.dart';",
+      "",
+      "@HiveType()",
+      "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} {",
+      "\t@HiveField(0)",
+      "\tString id;",
+      "\t${0:// Hive fields go here}",
+      "}"
+    ],
+    "description": "Creates an HiveType class structure based on the filename."
+  },
+  "@HiveField(#)": {
+    "prefix": "hf",
+    "body": [
+      "@HiveField(${1})",
+      "${2};",
+      "${0}"
+    ],
+    "description": "Creates @HiveField({number})"
+  },
+  "@HiveType()": {
+    "prefix": "ht",
+    "body": [
+      "@HiveType()",
+      "${0}"
+    ],
+    "description": "Creates @HiveType()"
+  },
+  "@HiveField(#) String": {
+    "prefix": "hfs",
+    "body": [
+      "@HiveField(${1})",
+      "String ${2};",
+      "${0}"
+    ],
+    "description": "Creates @HiveField({number}) String"
+  },
+  "@HiveField(#) int": {
+    "prefix": "hfi",
+    "body": [
+      "@HiveField(${1})",
+      "int ${2};",
+      "${0}"
+    ],
+    "description": "Creates @HiveField({number}) int"
+  },
+  "@HiveField(#) bool": {
+    "prefix": "hfb",
+    "body": [
+      "@HiveField(${1})",
+      "bool ${2};",
+      "${0}"
+    ],
+    "description": "Creates @HiveField({number}) bool"
+  },
+  "@HiveField(#) List": {
+    "prefix": "hfl",
+    "body": [
+      "@HiveField(${1})",
+      "List<${2}> ${3};",
+      "${0}"
+    ],
+    "description": "Creates @HiveField({number}) List<>"
+  },
+  "@HiveField(#) double": {
+    "prefix": "hfd",
+    "body": [
+      "@HiveField(${1})",
+      "double ${2};",
+      "${0}"
+    ],
+    "description": "Creates @HiveField({number}) double"
+  }
+}
