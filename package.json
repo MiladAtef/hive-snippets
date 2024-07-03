@@ -1,8 +1,8 @@
 {
   "name": "hive-snippets",
-  "displayName": "Hive Snippets",
-  "description": "Code snippets for hive library.",
-  "version": "1.0.0",
+  "displayName": "Flutter Hive Snippets",
+  "description": "Code snippets for Flutter hive library.",
+  "version": "1.1.0",
   "icon": "images/hive.png",
   "license": "MIT",
   "publisher": "miladatef",
